@@ -20,12 +20,13 @@ namespace Zza.Services
 
         public List<Customer> GetCustomers()
         {
-            return _context.Products.ToList();
+            return _context.Customers.ToList();
         }
+        
 
         public List<Product> GetProducts()
         {
-            return _context.Customers.ToList();
+            return _context.Products.ToList();
         }
 
         // This specifies that the method will be done atomically via transaction.
