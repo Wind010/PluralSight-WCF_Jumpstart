@@ -25,7 +25,7 @@ namespace Zza.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
 

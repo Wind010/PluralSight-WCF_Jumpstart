@@ -14,7 +14,7 @@ namespace Zza.Services
     // PerCall will create a new objects per request and dispose them when complete.
 
     [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerCall)]
-    public class ZzService : IZzService, IDisposable
+    public class ZzaService : IZzService, IDisposable
     {
         readonly ZzaDbContext _context = new ZzaDbContext();
 
