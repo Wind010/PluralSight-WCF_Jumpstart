@@ -15,7 +15,7 @@ namespace Zza.Services
         List<Customer> GetCustomers();
 
         [OperationContract]
-        void SubmitOrdre(Order order);
+        void SubmitOrder(Order order);
 
     }
 

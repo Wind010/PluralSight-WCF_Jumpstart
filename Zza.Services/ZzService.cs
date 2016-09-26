@@ -31,7 +31,7 @@ namespace Zza.Services
 
         // This specifies that the method will be done atomically via transaction.
         [OperationBehavior(TransactionScopeRequired=true)]
-        public void SubmitOrdre(Order order)
+        public void SubmitOrder(Order order)
         {
             _context.Orders.Add(order);
             order.OrderItems.ForEach(oi => _context.OrderItems.Add(oi));
