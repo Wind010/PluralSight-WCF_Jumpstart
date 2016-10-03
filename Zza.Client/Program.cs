@@ -22,6 +22,10 @@ namespace Zza.Client
                 // _proxy = new ZzaProxy("BasicHttpBinding_IZzService");
                 _proxy = new ZzServiceClient("BasicHttpBinding_IZzService");
 
+                // If needed, this is how you can set the client credentials.
+                //_proxy.ClientCredentials.Windows.ClientCredential.UserName = "AD\\Test";
+                //_proxy.ClientCredentials.Windows.ClientCredential.Password = "Password";
+
                 LoadProductsAndCustomers();
             }
             catch(Exception ex)
